@@ -6,6 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A93756AC2DEF3B6B00022324 /* SwiftAA in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A965080C2DEF2E6300CE3086 /* SwiftAA */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A965080D2DEF2E6300CE3086 /* SwiftAA in Frameworks */ = {isa = PBXBuildFile; productRef = A965080C2DEF2E6300CE3086 /* SwiftAA */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A93756AD2DEF3B6B00022324 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A93756AC2DEF3B6B00022324 /* SwiftAA in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A96507F92DEF2CF100CE3086 /* MoonPhase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonPhase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A965080D2DEF2E6300CE3086 /* SwiftAA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,7 @@
 				A96507F52DEF2CF100CE3086 /* Sources */,
 				A96507F62DEF2CF100CE3086 /* Frameworks */,
 				A96507F72DEF2CF100CE3086 /* Resources */,
+				A93756AD2DEF3B6B00022324 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +86,7 @@
 			);
 			name = MoonPhase;
 			packageProductDependencies = (
+				A965080C2DEF2E6300CE3086 /* SwiftAA */,
 			);
 			productName = MoonPhase;
 			productReference = A96507F92DEF2CF100CE3086 /* MoonPhase.app */;
@@ -94,6 +116,9 @@
 			);
 			mainGroup = A96507F02DEF2CF100CE3086;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A96508072DEF2E6300CE3086 /* XCRemoteSwiftPackageReference "SwiftAA" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A96507FA2DEF2CF100CE3086 /* Products */;
 			projectDirPath = "";
@@ -256,6 +281,8 @@
 				DEVELOPMENT_TEAM = 4HMM43CZHK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed for calculations\nneeded for calculations\nneeded for calculations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +311,8 @@
 				DEVELOPMENT_TEAM = 4HMM43CZHK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed for calculations\nneeded for calculations\nneeded for calculations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A96508072DEF2E6300CE3086 /* XCRemoteSwiftPackageReference "SwiftAA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onekiloparsec/SwiftAA.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A965080C2DEF2E6300CE3086 /* SwiftAA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A96508072DEF2E6300CE3086 /* XCRemoteSwiftPackageReference "SwiftAA" */;
+			productName = SwiftAA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A96507F12DEF2CF100CE3086 /* Project object */;
 }
